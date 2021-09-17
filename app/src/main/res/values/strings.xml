@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Currency</string>
+
+    <string name="currencies_title">Currencies</string>
+
+    <string name="favorite_title">Favorite</string>
+
+    <string name="common_error_message">Ooops! Something went wrong.</string>
+    <string name="common_error_button">Retry</string>
+
+    <string name="currencies_calculate_button">Calculate</string>
+    <string name="currencies_calculate_hint">Amount in EUR</string>
+
+    <string name="favorite_search_hint">Search</string>
+
+    <string name="currencies_favorite_dialog_message">Please select some currencies like favorite.</string>
+    <string name="currencies_favorite_dialog_positive_button">Ok</string>
+    <string name="currencies_favorite_dialog_negative_button">Cancel</string>
+</resources>

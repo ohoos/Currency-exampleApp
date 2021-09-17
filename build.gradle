@@ -1,0 +1,35 @@
+buildscript {
+    ext.kotlinVersion = "1.5.30"
+    ext.lifecycleVersion = "2.3.1"
+    ext.coroutinesVersion = "1.5.2-native-mt"
+    ext.navigationVersion = "2.3.5"
+    ext.swipeRefreshVersion = "1.1.0"
+    ext.hiltDaggerVersion = "2.38.1"
+    ext.hiltVersion = "1.0.0"
+    ext.retrofitVersion = "2.9.0"
+    ext.okhttpVersion = "5.0.0-alpha.2"
+    ext.pagingVersion = "3.0.0-alpha10"
+    ext.roomVersion = "2.3.0"
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.0.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$hiltDaggerVersion"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$navigationVersion"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
